@@ -17,9 +17,9 @@ class _AddProductPageState extends State<AddProductPage> {
 
 
   Future<void> sendData(String barcode, String title, String price) async {
-  const url = 'http://192.168.88.253/updateSuccess.php'; 
+    const url = 'http://192.168.88.253/updateSuccess.php';
 
-  try {
+    try {
     final response = await http.post(
       Uri.parse(url),
       headers: {
