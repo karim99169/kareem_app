@@ -69,7 +69,7 @@ Future<void> fetchData(String result) async {
 );
               }))):
               
-               Text('Scan to get the product',style: GoogleFonts.poppins(fontSize: 17),),
+               Text('Scan to get the product',style: GoogleFonts.poppins(fontSize: 17,backgroundColor: Colors.blue)),
 
 
               //Text(data[0]['title']),
