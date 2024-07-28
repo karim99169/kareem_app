@@ -20,7 +20,7 @@ Future.delayed(const Duration(seconds: 2),(){
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.orange,
       body: Center(child:Image.asset('assets/logo.jpg')),
     );
   }

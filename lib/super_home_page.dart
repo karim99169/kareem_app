@@ -49,6 +49,7 @@ Future<void> fetchData(String result) async {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
+      backgroundColor: Colors.blue,
       appBar: AppBar(title: Text('SuperScanner',style: GoogleFonts.poppins(fontWeight: FontWeight.bold),),actions: [
         IconButton(icon:const  Icon(Icons.add),onPressed: (){
           Navigator.of(context).push(MaterialPageRoute(builder: (context)=>const AddProductPage()));
