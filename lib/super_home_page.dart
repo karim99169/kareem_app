@@ -65,8 +65,12 @@ Future<void> fetchData(String result) async {
                 itemCount: data.length,
                 itemBuilder: ((context, index) {
                 return ListTile(
-   title: Text(data[index]["title"].toString()),
-   trailing: Text(data[index]['price']+'\$'),
+   title: Text(data[index]["title"].toString() , style: TextStyle(
+     color: Colors.white
+   ),),
+   trailing: Text(data[index]['price']+'\$' ,style: TextStyle(
+       color: Colors.white
+   ),),
 );
               }))):
               
@@ -79,7 +83,7 @@ Future<void> fetchData(String result) async {
               ElevatedButton(
               style: ElevatedButton.styleFrom(
               minimumSize: const Size(300,70),
-              backgroundColor: Colors.blue.shade400,shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
+              backgroundColor: Colors.white,shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
                onPressed: () async{
                     var res = await Navigator.push(
                         context,

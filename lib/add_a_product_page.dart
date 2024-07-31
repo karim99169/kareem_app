@@ -42,11 +42,12 @@ class _AddProductPageState extends State<AddProductPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blueAccent,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         title:  Text('ADD A PRODUCT PAGE',style: GoogleFonts.poppins(color:Colors.black),),
         iconTheme: const IconThemeData(color: Colors.black),
-        backgroundColor: Colors.transparent,elevation: 0,),
+        backgroundColor:Colors.white),
         body: Center(child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
@@ -78,10 +79,12 @@ class _AddProductPageState extends State<AddProductPage> {
                 const SizedBox(height: 20,),
                 TextField(
                 controller: titleController,
+                style: TextStyle(color: Colors.white),
                 decoration: const InputDecoration(labelText: "enter product title",border: OutlineInputBorder(borderSide: BorderSide(color: Colors.blue))),),
                
                const SizedBox(height: 20,),
                 TextField(
+                  style: TextStyle(color: Colors.white),
                 controller: priceController,
                 decoration: const InputDecoration(labelText: "enter price",border:OutlineInputBorder(borderSide:BorderSide(color: Colors.blue))),keyboardType: TextInputType.number,)
         
